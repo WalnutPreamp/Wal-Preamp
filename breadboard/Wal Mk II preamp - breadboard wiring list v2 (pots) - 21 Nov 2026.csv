@@ -1,0 +1,183 @@
+Board,Type,Part,Value,From,To,Net(s)
+B,Chip,U2,TAB1043,"pin 1 at f30, pin 8 at f37","pin 9 at e37, pin 16 at e30",
+B,"Trimmer (pin 1, wiper, pin 3)",R10,100k,"i11 (1), i12 (wiper)",i13 (3),B_SUM / B_Q3B / B_Q3B
+B,Transistor,Q3,BC548B,"b23 (C), b24 (B)",b25 (E),B_Q3C / B_Q3B / B_TAIL
+B,Transistor,Q4,BC548B,"d25 (E), d26 (B)",d27 (C),B_TAIL / REF / B_Q4C
+B,"Trimmer (pin 1, wiper, pin 3)",R11,500k,"i23 (1), i24 (wiper)",i25 (3),B_OUTM / B_OUTA / B_OUTA
+B,Resistor,R21,220k,j16,j13,BRIDGE_PRE / B_Q3B
+B,Capacitor,C17,220p,j12,"REF (bottom) rail, near col 13",B_Q3B / REF
+B,Capacitor,C6,470p,j11,"REF (bottom) rail, near col 10",B_SUM / REF
+B,Resistor,R44,1M,a37,"REF (top) rail, near col 37",B_FP / REF
+B,Electrolytic (+ at From),C13,4.7u,"+9V rail, near col 9","REF (top) rail, near col 9",+9V / REF
+B,Electrolytic (+ at From),C14,4.7u,"REF (bottom) rail, near col 9","GND rail, near col 9",REF / GND
+B,Resistor,R18,47k,"+9V rail, near col 23",a23,+9V / B_Q3C
+B,Resistor,R17,47k,"+9V rail, near col 27",a27,+9V / B_Q4C
+B,Resistor,R46,2.2k,g38,g39,B_C29 / B_X
+B,Switch link,SW2b,,i38,i39,B_C29 / B_X
+B,Resistor,R47,5.6k,j39,"REF (bottom) rail, near col 39",B_X / REF
+B,Capacitor,C29,470n,b35,b38,B_FOUT / B_C29
+B,Capacitor,C28,10n,c36,c39,B_FM / B_X
+B,Capacitor,C26,10n,d40,d37,B_C27 / B_FP
+B,Capacitor,C30,10n,a48,a46,B_POTMID / B_FOUT
+B,Capacitor,C27,2.2n,a40,"REF (top) rail, near col 40",B_C27 / REF
+B,Capacitor,C8,22n,f11,f13,B_SUM / B_Q3B
+B,Capacitor,C18,470p,a33,a32,BRIDGE_PRE / B_Q4C
+B,Capacitor,C36,220p,g31,g32,B_OUTM / B_OUTA
+B,Resistor,R45,1M,a36,a35,B_FM / B_FOUT
+B,Resistor,R14,100k,e25,f26,B_TAIL / GND
+B,Resistor,R5,220k,a2,a6,B_PU1 / B_SUM
+B,Capacitor,C9,470p,b2,b6,B_PU1 / B_SUM
+B,Resistor,R6,220k,c10,c6,B_PU2 / B_SUM
+B,Capacitor,C10,470p,d10,d6,B_PU2 / B_SUM
+B,Resistor,R7,220k,a12,a16,B_PU3 / B_SUM
+B,Capacitor,C11,470p,b12,b16,B_PU3 / B_SUM
+B,Resistor,R8,220k,c20,c16,B_PU4 / B_SUM
+B,Capacitor,C12,470p,d20,d16,B_PU4 / B_SUM
+B,Resistor,R26,2.2k,a60,a56,BRIDGE_PRE / B_RESA
+B,Resistor,R25,5.6k,b56,"REF (top) rail, near col 54",B_RESA / REF
+B,Switch link,SW2a,,c60,c56,BRIDGE_PRE / B_RESA
+B,Resistor,R43,10k,d56,d52,B_RESA / B_POTIN
+B,Resistor,R40,270k,e52,e48,B_POTIN / B_POTMID
+B,Resistor,R41,270k,d48,d44,B_POTMID / B_POTOUT
+B,Resistor,R42,15k,b44,b40,B_POTOUT / B_C27
+B,Resistor,R48,47k,f38,f42,B_C29 / BRIDGE_OUT
+B,Resistor,R50,47k,f51,f46,N_BLA / VOL_TOP
+B,Resistor,R49,47k,g43,g46,N_BLB / VOL_TOP
+B,Resistor,R57,47k,h28,h31,VOL_WIPER / B_OUTM
+B,Resistor,R39,1k,f24,f21,B_OUTA / OUT
+B,Resistor,R19,220k,g33,g36,+9V / DIV_MID
+B,Resistor,R20,220k,j36,"GND rail, near col 36",DIV_MID / GND
+B,Resistor,R54,330k,"REF (top) rail, near col 30",b30,REF / U2_BIAS1
+B,Resistor,R55,470k,h34,h37,REF / U2_BIAS2
+B,Resistor,RP,100R,a62,"+9V rail, near col 61",BATT+ / +9V
+B,Electrolytic (+ at From),CO,10u,g21,g20,OUT / OUT_AC
+B,Resistor,RB,100k,j20,"GND rail, near col 19",OUT_AC / GND
+B,Wire link,W1,,c23,c31,B_Q3C
+B,Wire link,W2,,b27,b32,B_Q4C
+B,Wire link,W3,,f16,d33,BRIDGE_PRE
+B,Wire link,W4,,b33,b60,BRIDGE_PRE
+B,Wire link,W5,,d34,"GND rail, near col 34",GND
+B,Wire link,W6,,j26,"GND rail, near col 25",GND
+B,Wire link,W7,,c35,b46,B_FOUT
+B,Wire link,W8,,j30,"REF (bottom) rail, near col 30",REF
+B,Wire link,W9,,j34,"REF (bottom) rail, near col 34",REF
+B,Wire link,W10,,j35,"REF (bottom) rail, near col 35",REF
+B,Wire link,W11,,a26,"REF (top) rail, near col 25",REF
+B,Wire link,W12,,j44,"REF (bottom) rail, near col 43",REF
+B,Wire link,W13,,g48,"REF (bottom) rail, near col 48",REF
+B,Wire link,W14,,g50,"REF (bottom) rail, near col 49",REF
+B,Wire link,W15,,i31,g23,B_OUTM
+B,Wire link,W16,,h32,g24,B_OUTA
+B,Wire link,W17,,h24,g25,B_OUTA
+B,Wire link,W18,,h33,"+9V rail, near col 33",+9V
+B,Wire link,W19,,e6,g11,B_SUM
+B,Wire link,W20,,h11,e16,B_SUM
+B,Wire link,W21,,g12,g13,B_Q3B
+B,Wire link,W22,,h13,e24,B_Q3B
+B,Wire link,W23,,e38,h38,B_C29
+B,Wire link,W24,,e39,h39,B_X
+B,Wire link,W25,,g47,g28,VOL_WIPER
+B,Wire link,W26,,"REF (top) rail, near col 61","REF (bottom) rail, near col 61",REF
+B,Wire leaving board,String 1 lead,,c2,,B_PU1
+B,Wire leaving board,String 2 lead,,a10,,B_PU2
+B,Wire leaving board,String 3 lead,,c12,,B_PU3
+B,Wire leaving board,String 4 lead,,a20,,B_PU4
+B,Wire leaving board,NECK OUT from board A,,f52,,NECK_OUT
+B,Wire leaving board,VOL TOP from board A,,h46,,VOL_TOP
+B,Wire leaving board,OUTPUT,,f20,,OUT_AC
+B,Wire leaving board,Battery +,,b62,,BATT+
+A,Chip,U1,TAB1043,"pin 1 at f30, pin 8 at f37","pin 9 at e37, pin 16 at e30",
+A,"Trimmer (pin 1, wiper, pin 3)",R9,100k,"i11 (1), i12 (wiper)",i13 (3),N_SUM / N_Q1B / N_Q1B
+A,Transistor,Q1,BC548B,"b23 (C), b24 (B)",b25 (E),N_Q1C / N_Q1B / N_TAIL
+A,Transistor,Q2,BC548B,"d25 (E), d26 (B)",d27 (C),N_TAIL / REF / N_Q2C
+A,"Trimmer (pin 1, wiper, pin 3)",R12,200k,"i22 (1), i23 (wiper)",i24 (3),N_ATTM / ATTACK_OUT / ATTACK_OUT
+A,Resistor,R22,150k,j15,j13,NECK_PRE / N_Q1B
+A,Capacitor,C16,220p,j12,"REF (bottom) rail, near col 13",N_Q1B / REF
+A,Capacitor,C5,470p,j11,"REF (bottom) rail, near col 10",N_SUM / REF
+A,Resistor,R32,1M,a37,"REF (top) rail, near col 37",N_FP / REF
+A,Resistor,R16,47k,"+9V rail, near col 23",a23,+9V / N_Q1C
+A,Resistor,R15,47k,"+9V rail, near col 27",a27,+9V / N_Q2C
+A,Resistor,R33,2.7k,g45,g46,N_FO2 / N_X
+A,Switch link,SW1b,,i45,i46,N_FO2 / N_X
+A,Resistor,R34,15k,j46,"REF (bottom) rail, near col 46",N_X / REF
+A,Capacitor,C22,470n,b35,b38,N_FOUT / N_FO2
+A,Capacitor,C23,10n,c36,c39,N_FM / N_X
+A,Capacitor,C19,10n,d40,d37,N_C21 / N_FP
+A,Capacitor,C20,33n,a48,a46,N_B / N_FOUT
+A,Capacitor,C21,4.7n,a40,"REF (top) rail, near col 40",N_C21 / REF
+A,Capacitor,C7,22n,f11,f13,N_SUM / N_Q1B
+A,Capacitor,C15,470p,a33,a32,NECK_PRE / N_Q2C
+A,Capacitor,C25,1n,g38,g36,N_HP1 / N_HP2
+A,Capacitor,C24,1n,f40,f38,N_HPIN / N_HP1
+A,Resistor,R30,1M,a36,a35,N_FM / N_FOUT
+A,Resistor,R13,100k,e25,f26,N_TAIL / GND
+A,Resistor,R1,220k,a2,a6,N_PU1 / N_SUM
+A,Capacitor,C1,470p,b2,b6,N_PU1 / N_SUM
+A,Resistor,R2,220k,c10,c6,N_PU2 / N_SUM
+A,Capacitor,C2,470p,d10,d6,N_PU2 / N_SUM
+A,Resistor,R3,220k,a12,a16,N_PU3 / N_SUM
+A,Capacitor,C3,470p,b12,b16,N_PU3 / N_SUM
+A,Resistor,R4,220k,c20,c16,N_PU4 / N_SUM
+A,Capacitor,C4,470p,d20,d16,N_PU4 / N_SUM
+A,Resistor,R24,2.7k,a60,a56,NECK_PRE / N_FIN
+A,Switch link,SW1a,,b60,b56,NECK_PRE / N_FIN
+A,Resistor,R23,15k,c56,"REF (top) rail, near col 53",N_FIN / REF
+A,Resistor,R27,4.7k,d56,d52,N_FIN / N_RVR
+A,Resistor,R29,270k,e48,e52,N_B / N_RVR
+A,Resistor,R28,270k,d48,d44,N_B / N_RVF
+A,Resistor,R31,4.7k,b44,b40,N_RVF / N_C21
+A,Resistor,R35,47k,f45,f49,N_FO2 / NECK_OUT
+A,Resistor,R60,4.7k,g43,g40,NECK_PRE / N_HPIN
+A,Resistor,R36,33k,h38,h35,N_HP1 / N_HPOUT
+A,Resistor,R37,33k,i36,"REF (bottom) rail, near col 36",N_HP2 / REF
+A,Resistor,R38,100k,g34,g31,N_HPOUT / N_ATTM
+A,Capacitor,C35,1n,f23,f20,ATTACK_OUT / N_ATTC
+A,Resistor,R51,1M,g20,g17,N_ATTC / VOL_TOP
+A,Switch link,SW3a,,h20,h17,N_ATTC / VOL_TOP
+A,Resistor,R52,470k,b30,"REF (top) rail, near col 30",U1_BIAS1 / REF
+A,Resistor,R53,470k,i37,"REF (bottom) rail, near col 37",U1_BIAS2 / REF
+A,Wire link,W1,,c23,c31,N_Q1C
+A,Wire link,W2,,b27,b32,N_Q2C
+A,Wire link,W3,,f15,d33,NECK_PRE
+A,Wire link,W4,,c33,c60,NECK_PRE
+A,Wire link,W5,,e60,f43,NECK_PRE
+A,Wire link,W6,,d34,"GND rail, near col 34",GND
+A,Wire link,W7,,j26,"GND rail, near col 25",GND
+A,Wire link,W8,,c35,b46,N_FOUT
+A,Wire link,W9,,j30,"REF (bottom) rail, near col 30",REF
+A,Wire link,W10,,a26,"REF (top) rail, near col 25",REF
+A,Wire link,W11,,h31,g22,N_ATTM
+A,Wire link,W12,,h32,g23,ATTACK_OUT
+A,Wire link,W13,,h23,g24,ATTACK_OUT
+A,Wire link,W14,,h33,"+9V rail, near col 33",+9V
+A,Wire link,W15,,i34,i35,N_HPOUT
+A,Wire link,W16,,e6,g11,N_SUM
+A,Wire link,W17,,h11,e16,N_SUM
+A,Wire link,W18,,g12,g13,N_Q1B
+A,Wire link,W19,,h13,e24,N_Q1B
+A,Wire link,W20,,e38,h45,N_FO2
+A,Wire link,W21,,e39,h46,N_X
+A,Wire link,W22,,"REF (top) rail, near col 61","REF (bottom) rail, near col 61",REF
+A,Wire leaving board,String 1 lead,,c2,,N_PU1
+A,Wire leaving board,String 2 lead,,a10,,N_PU2
+A,Wire leaving board,String 3 lead,,c12,,N_PU3
+A,Wire leaving board,String 4 lead,,a20,,N_PU4
+A,Wire leaving board,NECK OUT to board B,,g49,,NECK_OUT
+A,Wire leaving board,VOL TOP to board B,,f17,,VOL_TOP
+B,Pot wire,RV4 filter pot 2 x 250k gang 1,lugs 1 + 2 (joined),b52,,B_POTIN
+B,Pot wire,RV4 filter pot 2 x 250k gang 1,lug 3,b48,,B_POTMID
+B,Pot wire,RV4 filter pot 2 x 250k gang 2,lugs 1 + 2 (joined),c44,,B_POTOUT
+B,Pot wire,RV4 filter pot 2 x 250k gang 2,lug 3,c48,,B_POTMID
+B,Pot wire,RV2 blend 2 x 100k gang 1 (neck),lug 1,i50,,REF
+B,Pot wire,RV2 blend 2 x 100k gang 1 (neck),lug 2,i51,,N_BLA
+B,Pot wire,RV2 blend 2 x 100k gang 1 (neck),lug 3,i52,,NECK_OUT
+B,Pot wire,RV2 blend 2 x 100k gang 2 (bridge),lug 1,i42,,BRIDGE_OUT
+B,Pot wire,RV2 blend 2 x 100k gang 2 (bridge),lug 2,i43,,N_BLB
+B,Pot wire,RV2 blend 2 x 100k gang 2 (bridge),lug 3,i44,,REF
+B,Pot wire,RV3 volume 100k ,lug 1,i48,,REF
+B,Pot wire,RV3 volume 100k ,lug 2,i47,,VOL_WIPER
+B,Pot wire,RV3 volume 100k ,lug 3,i46,,VOL_TOP
+A,Pot wire,RV1 filter pot 2 x 250k gang 1,lugs 1 + 2 (joined),b52,,N_RVR
+A,Pot wire,RV1 filter pot 2 x 250k gang 1,lug 3,b48,,N_B
+A,Pot wire,RV1 filter pot 2 x 250k gang 2,lugs 1 + 2 (joined),c44,,N_RVF
+A,Pot wire,RV1 filter pot 2 x 250k gang 2,lug 3,c48,,N_B
