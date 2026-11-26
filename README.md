@@ -28,4 +28,14 @@ The schematic notes refer to earlier community traces by Kinkh and Dario.
 
 This is an unofficial project and is not affiliated with or endorsed by Wal or Electric Wood. Names and trademarks belong to their owners. The material is offered as is, with no warranty that it is correct or fit for any purpose.
 
-No licence has been chosen yet.
+## Licence
+
+The documents and drawings in this repository are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0). The full text is in the `LICENSE` file.
+
+- You may copy, share and adapt them for non-commercial purposes.
+- Credit this repository (WalnutPreamp, github.com/WalnutPreamp/Wal-Preamp) and say if you changed anything.
+- Share adapted versions under the same licence.
+
+As an additional permission, you may use these files when diagnosing and repairing instruments, including repair work you are paid for.
+
+The licence covers the documentation in this repository only. It grants no rights in the Wal name, its trademarks or the original design.
